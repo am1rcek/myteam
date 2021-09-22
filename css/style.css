@@ -15,10 +15,441 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: 'Livvic', sans-serif;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+.container{
+  width: 1130px;
+  padding: 0 20px;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.hero {
+  background-color: #014e56;
+  background-image: url("../img/hero-bg1.svg") ;
+  background-repeat: no-repeat;
+  background-position:left;
+}
+.hero-header {
+  padding-top: 70px;
+}
+
+.hero-header__nav-bar {
+}
+.nav-bar__list {
+  margin: 0;
+  padding: 0;
+  margin-left: 80px;
+}
+.nav-bar__item {
+  margin-left: 40px;
+}
+.nav-bar__item:hover .nav-bar__link {
+  color: #f67e7e;
+}
+.nav-bar__item:nth-child(1){
+  margin: 0 ;
+}
+.nav-bar__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  transition: color 0.4s ease;
+}
+.hero-header__btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  border: 2px solid #ffff;
+  background-color: transparent;
+  border-radius: 24px;
+  padding: 10px 33px;
+  margin-left: auto;
+  transition:  color 0.4s ease, background 0.4s ease;
+}
+.hero-header__btn:hover{
+  color: #002529;
+  background: #fff;
+}
+.talent {
+  position: relative;
+  padding: 129px 0 250px 0;
+}
+.talent__desc-box{
+  position:relative;
+}
+.talent__desc-box::before{
+  content: "";
+  display: block;
+  position:absolute;
+  width: 358px;
+  height: 200px;
+  background-image: url("../img/hero-bg2.svg") ;
+  background-repeat: no-repeat;
+  background-size: 358px,200px;
+  bottom: -351px;
+  right:0;
+}
+
+.talent__title {
+  width: 635px;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+}
+.talent__title span{
+  color: #f67e7e;
+}
+.talent__line {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #79c8c7;
+  margin-bottom: 79px;
+}
+.talent__desc {
+  margin: 0;
+  padding: 0;
+  width: 445px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+.teams {
+  background: #012f34;
+  padding: 140px 0;
+  background-image: url("../img/teams-bg.svg");
+  background-repeat: no-repeat;
+  background-position:right bottom;
+}
+.teams__line {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background:#f67e7e;
+  margin-bottom: 54px;
+}
+.teams__title {
+  width: 445px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.teams__list-box{
+  display: flex;
+  justify-content: flex-end;
+}
+.teams__list {
+  padding: 0;
+}
+.teams__item {
+  margin-bottom: 32px;
+  position: relative;
+}
+.teams__item:nth-child(1):before{
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../img/teams1.svg");
+  position:absolute;
+  left: -90px;
+}
+.teams__item:nth-child(2):before{
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../img/teams2.svg");
+  position:absolute;
+  left: -90px;
+}
+.teams__item:nth-child(3):before{
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../img/teams3.svg");
+  position:absolute;
+  left: -90px;
+}
+.item__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+  margin-bottom: 16px;
+}
+.item__text {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  width: 445px;
+}
+.stories {
+  padding: 140px 0;
+  background-color: #004047;
+  background-image: url("../img/stories-bg.svg"), url("../img/stories-bg2.svg");
+  background-repeat: no-repeat no-repeat;
+  background-position:top left,bottom right;
+}
+.stories__title {
+  width: 932px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 92px;
+}
+.stories__title span{
+  color: #79c8c7;
+}
+.stories__list {
+  padding: 0;
+  margin: 0;
+}
+.stories__item{
+  position: relative;
+  z-index: 2;
+}
+.stories__item::before{
+  content: "";
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%,-62%);
+  width: 67px;
+  height: 56px;
+  display: inline-block;
+  background-image: url("../img/list-bg1.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.stories__item:nth-child(1):after{
+  content: "";
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%,90%);
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  background-image: url("../img/kady-baker.png");
+  background-size: 62px,62px;
+  background-repeat: no-repeat;
+}
+.stories__item:nth-child(2):after{
+  content: "";
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%,90%);
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  background-image: url("../img/ayisha-reese.png");
+  background-size: 62px,62px;
+  background-repeat: no-repeat;
+}
+.stories__item:nth-child(3):after{
+  content: "";
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%,90%);
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  background-image: url("../img/arthut-clarke.png");
+  background-size: 62px,62px;
+  background-repeat: no-repeat;
+}
+.peoples__desc {
+  width: 350px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.peoples__titile {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2px;
+}
+.peoples__span {
+  display: inline-block;
+  width: 350px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+}
+.get-started {
+  padding: 76px 0;
+  background: #f67e7e;
+  background-image: url("../img/started-bg.svg");
+  background-repeat: no-repeat;
+  background-position:left bottom;
+}
+.get-started__content-box {
+  width: 917px;
+  margin: 0 auto;
+}
+.get-started__title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #012f34;
+}
+.get-started__link {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012f34;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  padding: 10px 33px;
+  transition: color 0.4s ease, background 0.4s ease;
+}
+.get-started__link:hover{
+  background: #012f34;
+  color: #fff;
+}
+.footer {
+  padding: 48px 0;
+  background: #002529;
+}
+.footer__logo-box {
+}
+.logo-box__list {
+  margin: 0 ;
+  padding: 0;
+  margin-top: 25px;
+}
+.logo-box__item {
+  margin-left: 40px;
+}
+.logo-box__item:nth-child(1){
+  margin: 0;
+}
+.logo-box__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  transition:color 0.4s ease;
+}
+.logo-box__link:hover{
+  color: #f67e7e;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+}
+.footer__item {
+  margin-bottom: 2px;
+}
+.footer__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.icons__list {
+  padding: 0;
+  margin: 0;
+}
+.icons__item {
+  margin-left: 16px;
+}
+.icons__item:nth-child(1){
+  margin:0;
+}
+.icons__item i{
+  font-size: 27px;
+  color: #fff;
+  transition: color 0.4s ease, background 0.4s ease;
+}
+.bxl-pinterest-alt {
+  border-radius: 50%;
+  background: #fff;
+  font-size: 23px !important;
+  color: #002529 !important; 
+  padding:1px;
+}
+.icons__item:hover .bxl-pinterest-alt{
+  background: #f67e7e;
+}
+.icons__item:hover i{
+  color: #f67e7e;
+}
+.footer__icons-box{
+  height: 107px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.copyright{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
